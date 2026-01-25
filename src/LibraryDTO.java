@@ -1,15 +1,4 @@
 /*************************************************************
-Example: books table (logical design)
-
-CREATE TABLE books (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    title VARCHAR(100),
-    author VARCHAR(100),
-    quantity INT
-);
-
-Each column → one variable in DTO.
-
 - DTO is a POJO / Java Bean.
 - It carries data between DAO, Service, and UI layers.
 - No business logic, no JDBC code.
