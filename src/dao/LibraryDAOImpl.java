@@ -6,7 +6,8 @@
 - DTO object maps one database row to Java object.
 ***************************************************************/
 
-
+package dao;
+import dto.LibraryDTO;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -19,7 +20,7 @@ public class LibraryDAOImpl implements LibraryDAO {
     // Database connection details
     private static final String URL = "jdbc:mysql://localhost:3306/rnsitdb";
     private static final String USER = "root";
-    private static final String PASS = "Banni@123";
+    private static final String PASS = "Kani1290@Hele";
 
     // INSERT operation
     @Override

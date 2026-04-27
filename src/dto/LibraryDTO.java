@@ -4,6 +4,7 @@
 - No business logic, no JDBC code.
 - One DTO object represents one row in the database table.
 ***************************************************************/
+package dto;
 
 public class LibraryDTO {
 

@@ -5,7 +5,9 @@
 - Validation like `quantity >= 0` is done before database access.
 - This improves maintainability and scalability.
 ***************************************************************/
-
+package service;
+import dao.*;
+import dto.LibraryDTO;
 import java.util.List;
 
 public class LibraryService {

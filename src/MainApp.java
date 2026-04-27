@@ -5,7 +5,7 @@
 - This maintains separation of concerns.
 - Menu-driven program helps test all CRUD operations.
 ***************************************************************/
-
+package ui; // or remove later
 import java.util.List;
 import java.util.Scanner;
 

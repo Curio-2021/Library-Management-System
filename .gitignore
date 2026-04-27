@@ -1,1 +1,11 @@
-/bin/
+# Compiled files
+*.class
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# MySQL connector (optional)
+*.jar

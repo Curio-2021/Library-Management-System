@@ -5,7 +5,8 @@
 - Using an interface ensures loose coupling.
 - Multiple implementations are possible without changing service layer.
 ***************************************************************/
-
+package dao;
+import dto.LibraryDTO;
 import java.util.List;
 
 public interface LibraryDAO {
