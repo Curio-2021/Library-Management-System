@@ -107,6 +107,7 @@ CREATE TABLE books (
 <p align="center">
   <img src="images/view_deletedbook.png" width="500"/>
 </p>
+
 ---
 
 ## Future Improvements
