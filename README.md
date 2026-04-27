@@ -88,8 +88,25 @@ CREATE TABLE books (
 
 ## GUI Preview
 
-*(Screenshots coming soon)*
+<p align="center">
+  <img src="images/mainui.png" width="500"/>
+</p>
 
+<p align="center">
+  <img src="images/addbook.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/view_addedbook.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/deletebook.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/view_deletedbook.png" width="500"/>
+</p>
 ---
 
 ## Future Improvements
