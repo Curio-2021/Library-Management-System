@@ -1,57 +1,115 @@
-# Library Management System (JDBC)
+# Library Management System (Java Swing + JDBC)
 
-A console-based **Library Management System** developed using **Java**, **JDBC**, and **MySQL**.  
-This project follows a **layered architecture (DTO–DAO–Service–UI)** and supports complete **CRUD operations** on library book records.
+A desktop-based **Library Management System** built with **Java Swing**, **JDBC**, and **MySQL**.
+It uses a layered architecture to keep the code organized and maintainable while providing a simple GUI for managing book records.
 
 ---
 
 ## Features
 
-- Add new books
-- Fetch book details by ID
-- View all books
-- Update book information
-- Delete book records
-- Input validation through service layer
+* Add books through a GUI form
+* View all books in a table (JTable)
+* Delete books by ID
+* Backend support for fetching and updating books
+* Basic input validation in the service layer
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-- Java
-- JDBC
-- MySQL
-- SQL
-
----
-
-## Project Architecture
-
-This project follows a **layered architecture** to ensure separation of concerns and easy maintenance.
-
-- **DTO (Data Transfer Object)**  
-  Transfers data between layers
-
-- **DAO (Data Access Object)**  
-  Handles all database operations using JDBC
-
-- **Service Layer**  
-  Contains business logic and validations
-
-- **Main (UI Layer)**  
-  Menu-driven console interface for user interaction
+* Java (Swing)
+* JDBC
+* MySQL
+* SQL
 
 ---
 
-## Database Design
+## Project Structure
 
-### Table: `books`
+```
+Library-Management-System/
+│
+├── src/
+│   ├── dao/        → database interaction (JDBC)
+│   ├── dto/        → data objects (Book model)
+│   ├── service/    → business logic & validation
+│   ├── ui/         → Swing GUI
+│   └── mysql-connector-j-9.x.x.jar
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+## Architecture Overview
+
+The project is structured into layers to keep responsibilities separate:
+
+* **DTO** – represents the data (book entity)
+* **DAO** – handles database queries
+* **Service** – applies validation and business rules
+* **UI** – interacts with the user via Swing
+
+---
+
+## Database Setup
 
 ```sql
+CREATE DATABASE rnsitdb;
+USE rnsitdb;
+
 CREATE TABLE books (
     id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(100),
     author VARCHAR(100),
     quantity INT
 );
+```
 
+---
+
+## Running the Project
+
+1. Make sure MySQL is running
+2. Update DB credentials in `dao/LibraryDAOImpl.java`
+3. Compile:
+
+   ```bash
+   javac -d . -cp src/mysql-connector-j-9.x.x.jar src/*/*.java
+   ```
+4. Run:
+
+   ```bash
+   java -cp ".;src/mysql-connector-j-9.x.x.jar" ui.LibraryUI
+   ```
+
+---
+
+## GUI Preview
+
+*(Screenshots coming soon)*
+
+---
+
+## Future Improvements
+
+* Complete update & search functionality in UI
+* Improve layout (replace null layout with proper managers)
+* Add authentication
+* Extend to issue/return system
+
+---
+
+## What I Learned
+
+* Structuring Java applications using layered architecture
+* Connecting Java applications to MySQL using JDBC
+* Building a basic GUI using Swing
+* Handling classpaths and project structure in Java
+
+---
+
+## Author
+
+Kanishka Agarwal
