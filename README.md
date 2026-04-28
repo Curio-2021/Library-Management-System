@@ -1,4 +1,4 @@
-# Library Management System (Java Swing + JDBC)
+# Library Management System
 
 A desktop-based **Library Management System** built with **Java Swing**, **JDBC**, and **MySQL**.
 It uses a layered architecture to keep the code organized and maintainable while providing a simple GUI for managing book records.
